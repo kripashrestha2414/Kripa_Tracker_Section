@@ -32,6 +32,7 @@ public class CalculatorUI extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         txtShower = new javax.swing.JTextField();
@@ -52,19 +53,63 @@ public class CalculatorUI extends javax.swing.JFrame {
         filler3 = new javax.swing.Box.Filler(new java.awt.Dimension(20, 0), new java.awt.Dimension(20, 0), new java.awt.Dimension(20, 32767));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(txtShower, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 100, 20));
-        getContentPane().add(txtLaundry, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 100, 20));
-        getContentPane().add(txtSink, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, 100, 20));
+        getContentPane().setLayout(new java.awt.GridBagLayout());
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 7;
+        gridBagConstraints.ipadx = 36;
+        gridBagConstraints.ipady = -2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(19, 19, 0, 0);
+        getContentPane().add(txtShower, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 7;
+        gridBagConstraints.ipadx = 36;
+        gridBagConstraints.ipady = -2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(20, 19, 0, 0);
+        getContentPane().add(txtLaundry, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridwidth = 7;
+        gridBagConstraints.ipadx = 36;
+        gridBagConstraints.ipady = -2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(20, 19, 0, 0);
+        getContentPane().add(txtSink, gridBagConstraints);
 
         jLabel1.setText("Shower (mins)");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, -1, 20));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipady = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(19, 38, 0, 0);
+        getContentPane().add(jLabel1, gridBagConstraints);
 
         jLabel2.setText("Laundry (loads)");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, -1, 20));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.ipady = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(20, 38, 0, 0);
+        getContentPane().add(jLabel2, gridBagConstraints);
 
         jLabel3.setText("Sink (mins)");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, -1, 20));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.ipady = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(20, 38, 0, 0);
+        getContentPane().add(jLabel3, gridBagConstraints);
 
         btnCalculate.setText("Calculate");
         btnCalculate.addActionListener(new java.awt.event.ActionListener() {
@@ -72,7 +117,13 @@ public class CalculatorUI extends javax.swing.JFrame {
                 btnCalculateActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCalculate, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(24, 38, 0, 0);
+        getContentPane().add(btnCalculate, gridBagConstraints);
 
         btnReset.setText("Reset");
         btnReset.addActionListener(new java.awt.event.ActionListener() {
@@ -80,16 +131,42 @@ public class CalculatorUI extends javax.swing.JFrame {
                 btnResetActionPerformed(evt);
             }
         });
-        getContentPane().add(btnReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridwidth = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(24, 19, 0, 0);
+        getContentPane().add(btnReset, gridBagConstraints);
 
         lblResult.setText("Estimated daily use: 0 L");
-        getContentPane().add(lblResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 58, 0, 0);
+        getContentPane().add(lblResult, gridBagConstraints);
 
         lblWaterCalc.setFont(new java.awt.Font("Impact", 0, 24)); // NOI18N
         lblWaterCalc.setForeground(new java.awt.Color(51, 204, 255));
         lblWaterCalc.setText("Water Usage Calculator");
-        getContentPane().add(lblWaterCalc, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, -1, -1));
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 12;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(60, 8, 0, 0);
+        getContentPane().add(lblWaterCalc, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(0, 17, 0, 0);
+        getContentPane().add(jScrollPane1, gridBagConstraints);
 
         btnHome.setBackground(new java.awt.Color(0, 204, 153));
         btnHome.setText("Home");
@@ -98,7 +175,13 @@ public class CalculatorUI extends javax.swing.JFrame {
                 btnHomeActionPerformed(evt);
             }
         });
-        getContentPane().add(btnHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 330, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 13;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(37, 28, 0, 0);
+        getContentPane().add(btnHome, gridBagConstraints);
 
         btnBack.setBackground(new java.awt.Color(153, 204, 255));
         btnBack.setText("Back");
@@ -107,10 +190,38 @@ public class CalculatorUI extends javax.swing.JFrame {
                 btnBackActionPerformed(evt);
             }
         });
-        getContentPane().add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, -1));
-        getContentPane().add(filler1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 440, 10));
-        getContentPane().add(filler2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 320, 10, 50));
-        getContentPane().add(filler3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 330, -1, 20));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(37, 10, 0, 0);
+        getContentPane().add(btnBack, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.gridwidth = 15;
+        gridBagConstraints.gridheight = 3;
+        gridBagConstraints.ipadx = 440;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        getContentPane().add(filler1, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 14;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.gridheight = 5;
+        gridBagConstraints.ipadx = 10;
+        gridBagConstraints.ipady = 30;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(27, 8, 8, 0);
+        getContentPane().add(filler2, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 14;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.gridwidth = 16;
+        gridBagConstraints.ipady = 20;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(37, 8, 0, 0);
+        getContentPane().add(filler3, gridBagConstraints);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
