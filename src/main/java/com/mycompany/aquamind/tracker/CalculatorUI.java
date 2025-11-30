@@ -4,11 +4,10 @@
  */
 package com.mycompany.aquamind.tracker;
 
-import javax.swing.JOptionPane;
 import javax.swing.*;
-import com.mycompany.aquamind.AquaMindApp;
-import com.mycompany.aquamind.auth.AuthUi;
-import com.mycompany.aquamind.Menu;
+//import com.mycompany.aquamind.AquaMindApp;
+//import com.mycompany.aquamind.auth.AuthUi;
+//import com.mycompany.aquamind.Menu;
 
 /**
  *
@@ -143,13 +142,13 @@ public class CalculatorUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnResetActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-        new Menu().setVisible(true); //Back to Menu
-        this.dispose(); //Closes CalculatorUI
+        /**new Menu().setVisible(true); //Back to Menu
+        this.dispose(); //Closes CalculatorUI**/
     }//GEN-LAST:event_btnBackActionPerformed
 
     private void btnHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHomeActionPerformed
-        new AuthUi().setVisible(true); //Opens Auth UI
-        this.dispose(); //Closes CalculatorUI
+        /**new AuthUi().setVisible(true); //Opens Auth UI
+        this.dispose(); //Closes CalculatorUI**/
     }//GEN-LAST:event_btnHomeActionPerformed
 
     

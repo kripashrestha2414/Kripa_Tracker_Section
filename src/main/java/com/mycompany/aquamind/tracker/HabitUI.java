@@ -4,8 +4,8 @@
  */
 package com.mycompany.aquamind.tracker;
 
-import com.mycompany.aquamind.Menu;
-import com.mycompany.aquamind.auth.AuthUi;
+//import com.mycompany.aquamind.Menu;
+//import com.mycompany.aquamind.auth.AuthUi;
 import javax.swing.JOptionPane;
 
 /**
@@ -160,17 +160,18 @@ public class HabitUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSaveActionPerformed
 
     private void btnHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHomeActionPerformed
-        new AuthUi().setVisible(true); //Opens Auth UI
-        this.dispose(); //Closes CalculatorUI
+        /**new AuthUi().setVisible(true); //Opens Auth UI
+        this.dispose(); //Closes CalculatorUI**/
     }//GEN-LAST:event_btnHomeActionPerformed
 
     private void btnBack2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack2ActionPerformed
-        new Menu().setVisible(true); //Back to Menu
-        this.dispose(); //Closes HabitUI
+        /**new Menu().setVisible(true); //Back to Menu
+        this.dispose(); //Closes HabitUI**/
     }//GEN-LAST:event_btnBack2ActionPerformed
 
     /**
      * Main Method for testing UI
+     * @param args
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

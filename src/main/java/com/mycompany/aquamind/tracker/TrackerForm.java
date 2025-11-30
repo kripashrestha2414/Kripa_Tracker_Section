@@ -4,8 +4,8 @@
  */
 package com.mycompany.aquamind.tracker;
 
-import com.mycompany.aquamind.Menu;
-import com.mycompany.aquamind.auth.AuthUi;
+//import com.mycompany.aquamind.Menu;
+//import com.mycompany.aquamind.auth.AuthUi;
 
 /**
  *
@@ -132,13 +132,13 @@ public class TrackerForm extends javax.swing.JFrame {
     }//GEN-LAST:event_waterCalcBtnActionPerformed
 
     private void homeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeBtnActionPerformed
-        new AuthUi().setVisible(true); //Opens Auth UI
-        this.dispose(); //Closes Tracker Form
+        /**new AuthUi().setVisible(true); //Opens Auth UI
+        this.dispose(); //Closes Tracker Form**/
     }//GEN-LAST:event_homeBtnActionPerformed
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
-        new Menu().setVisible(true); //Back to Menu
-        this.dispose(); //Closes Tracker Form
+        //**new Menu().setVisible(true); //Back to Menu
+        this.dispose(); //Closes Tracker Form**/
     }//GEN-LAST:event_backBtnActionPerformed
 
     /**
