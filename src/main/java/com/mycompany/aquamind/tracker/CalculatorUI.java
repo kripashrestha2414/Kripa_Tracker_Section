@@ -45,7 +45,6 @@ public class CalculatorUI extends javax.swing.JFrame {
         btnReset = new javax.swing.JButton();
         lblResult = new javax.swing.JLabel();
         lblWaterCalc = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
         btnHome = new javax.swing.JButton();
         javax.swing.JButton btnBack = new javax.swing.JButton();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 10), new java.awt.Dimension(0, 10), new java.awt.Dimension(32767, 30));
@@ -158,15 +157,6 @@ public class CalculatorUI extends javax.swing.JFrame {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(60, 8, 0, 0);
         getContentPane().add(lblWaterCalc, gridBagConstraints);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 9;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.weighty = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(0, 17, 0, 0);
-        getContentPane().add(jScrollPane1, gridBagConstraints);
 
         btnHome.setBackground(new java.awt.Color(0, 204, 153));
         btnHome.setText("Home");
@@ -299,7 +289,6 @@ public class CalculatorUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel lblResult;
     private javax.swing.JLabel lblWaterCalc;
